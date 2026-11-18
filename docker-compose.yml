@@ -1,0 +1,26 @@
+services:
+  db:
+    image: postgres:18
+    container_name: seruna-db
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-postgres}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Defina POSTGRES_PASSWORD en .env}
+      POSTGRES_DB: postgres
+      TZ: America/Lima
+      PGTZ: America/Lima
+    ports:
+      # 5433 para no chocar con un PostgreSQL local en 5432
+      - "${DB_PORT:-5433}:5432"
+    volumes:
+      # postgres:18 guarda los datos bajo /var/lib/postgresql/<versión>/docker
+      - seruna_pgdata:/var/lib/postgresql
+      - ./db:/dump:ro
+      - ./scripts/db:/scripts:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER:-postgres} -d postgres"]
+      interval: 5s
+      timeout: 3s
+      retries: 30
+
+volumes:
+  seruna_pgdata:

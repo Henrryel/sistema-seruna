@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="SERUNA">
+  <rect width="100" height="100" rx="20" fill="#2f3d8f"/>
+  <g fill="#fff">
+    <path d="M18 18h17v4.5H22.5V35H18zM65 18h17v17h-4.5V22.5H65zM18 65h4.5v12.5H35V82H18zM77.5 65H82v17H65v-4.5h12.5z"/>
+    <path d="M34 34h6.4v6.4H34zM40.4 34h6.4v6.4h-6.4zM46.8 34h6.4v6.4h-6.4zM59.6 34H66v6.4h-6.4zM34 40.4h6.4v6.4H34zM46.8 40.4h6.4v6.4h-6.4zM53.2 40.4h6.4v6.4h-6.4zM59.6 40.4H66v6.4h-6.4zM34 46.8h6.4v6.4H34zM40.4 46.8h6.4v6.4h-6.4zM53.2 46.8h6.4v6.4h-6.4zM46.8 53.2h6.4v6.4h-6.4zM53.2 53.2h6.4v6.4h-6.4zM59.6 53.2H66v6.4h-6.4zM34 59.6h6.4V66H34zM40.4 59.6h6.4V66h-6.4zM46.8 59.6h6.4V66h-6.4zM59.6 59.6H66V66h-6.4z"/>
+  </g>
+</svg>

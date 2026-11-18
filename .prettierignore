@@ -1,0 +1,7 @@
+.next
+node_modules
+storage
+db
+docs/db
+src/server/db/tipos.ts
+package-lock.json
